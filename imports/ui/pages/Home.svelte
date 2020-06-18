@@ -4,9 +4,7 @@
 
 	onMount(()=> {
 		M.AutoInit()
-		var instance = M.Modal.getInstance(modal1)
-		console.log(instance)
-		instance.open()
+		M.Modal.getInstance(modal1).open()
 	})
 </script>
 
@@ -23,5 +21,3 @@
     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
   </div>
 </div>
-
-  <i class="material-icons">add</i>
