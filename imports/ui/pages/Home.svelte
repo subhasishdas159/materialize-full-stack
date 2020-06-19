@@ -3,7 +3,7 @@
 	let modal1
 
 	onMount(()=> {
-		M.AutoInit()
+		M.Modal.init(modal1)
 		M.Modal.getInstance(modal1).open()
 	})
 </script>

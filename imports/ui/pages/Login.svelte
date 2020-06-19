@@ -28,11 +28,13 @@
 
 {#if !$currentUser}
 	<h2>Login</h2>
-	<form on:submit|preventDefault={handleSubmit}>
+	<form on:sumbit|preventDefault={handleSubmit}>
 	  <p>Email: <input type="email" bind:value={email}></p>
 
 	  <p>Password: <input type="password" bind:value={password}></p>
 
-	  <p><input type="submit" value="Login"></p>
+	  <button class="btn waves-effect waves-light" name="action">Login
+	  	<i class="material-icons right">send</i>
+		</button>
 	</form>
 {/if}
